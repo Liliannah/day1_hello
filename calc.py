@@ -1,15 +1,20 @@
-name =input  ( "what is your name? " )
-age =input  ( "how old are you? " )
-age = int ( age )
-birth_year =  2026 - age
-print  ("hello, ", name )
-print  ("you were born in,", birth_year)
+print("Calculator started. Type 'quit' to exit.")
 
-if age >=60:
-  print("you're senior Citizen! Respect.")
-elif age >=18:
-  print("you're an adult in Kenya.you can vote
-!")
-  else:
-  print("you're still a youth.Keep coding!") 
-  print("thanks for using calculator!")
+while True:
+    age = input("\nHow old are you? ")
+    
+    if age.lower() == "quit":
+        print("Goodbye!")
+        break
+    
+    age = int(age)
+    
+    print("\n--- Age check ---")
+    if age >= 60:
+        print("You're a senior Citizen! Respect.")
+    elif age >= 18:
+        print("You're an adult in Kenya. You can vote!")
+    else:
+        print("You're still a youth. Keep coding")
+    
+    print("Thanks for using calculator!")
